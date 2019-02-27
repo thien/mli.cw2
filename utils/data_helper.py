@@ -71,7 +71,6 @@ class ImageSegmentationDataset(Dataset):
         :param csv_file (string): Path to csv file with image and segmentation filenames.
         """
         self.data = pd.read_csv(csv_file)
-        print(self.data)
         self.samples = []
         self.img_names = []
         self.seg_names = []
